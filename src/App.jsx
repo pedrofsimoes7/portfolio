@@ -132,9 +132,9 @@ const About = () => (
           About me
         </h2>
         <p className="mt-3 leading-relaxed">
-          I am a Computer Engineering student at the Polytechnic Institute of Castelo Branco,
-          currently completing the second year of my degree through the Erasmus+ program in Poland.
-          I bring responsibility, adaptability to different cultural and professional contexts, and strong teamwork skills.
+          I am a 3rd-year Computer Engineering student at the Polytechnic Institute of Castelo Branco. 
+          I successfully completed an Erasmus+ semester in Poland, which strengthened my adaptability to different cultural 
+          and professional contexts and improved my teamwork and problem-solving skills.
           I also have experience volunteering at public and sports events and have participated in technology
           initiatives such as the Global Game Jam. I’m looking for opportunities to apply my academic knowledge,
           learn quickly, and contribute actively to the teams I join.
