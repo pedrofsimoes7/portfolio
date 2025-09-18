@@ -209,6 +209,8 @@ const About = () => (
               Focus on programming, software development, databases, algorithms, OOP and web technologies.</li>
             <li><span className="font-medium">Erasmus+ Semester in Computer Science</span> — Białystok University of Technology, Poland (Spring 2025).  
               Courses in distributed systems, web development, human-computer interaction, and data structures.</li>
+            <li><span className="font-medium">HackerRank</span> — Certificate of Accomplishment (2025).  
+            Python(Basic). https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4</li>
           </ul>
         </Card>
         <Card>
