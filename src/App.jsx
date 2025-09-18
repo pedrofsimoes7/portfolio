@@ -113,9 +113,9 @@ const Hero = () => (
   </a>
 </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4 text-sm opacity-90">
+          <div className="mt-8 flex flex-wrap items-center gap-4 text-sm opacity-90 break-words">
             <span className="inline-flex items-center gap-2"><MapPin size={16} /> {config.localizacao}</span>
-            <a className="inline-flex items-center gap-2 underline" href={`mailto:${config.email}`}><Mail size={16} /> {config.email}</a>
+            <a className="inline-flex items-center gap-2 underline break-all" href={`mailto:${config.email}`}><Mail size={16} /> {config.email}</a>
           </div>
         </div>
       </div>
@@ -464,23 +464,22 @@ const Footer = () => (
 // APP
 // =============================
 export default function PortfolioSite() {
-const [route] = useHashRoute();
+  const [route] = useHashRoute();
 
-
-return (
-<div className="min-h-screen flex flex-col bg-neutral-950 text-white font-luxury">
-<Header route={route} />
-{route === "/" && (
-<>
-<Hero />
-<About />
-<Projects/>
-</>
-)}
-{route === "/about" && <About />}
-{route === "/projects" && <Projects />}
-{route === "/faq" && <FAQ />}
-<Footer />
-</div>
-);
+  return (
+    <div className="min-h-screen flex flex-col bg-neutral-950 text-white font-luxury overflow-x-hidden">
+      <Header route={route} />
+      {route === "/" && (
+        <>
+          <Hero />
+          <About />
+          <Projects />
+        </>
+      )}
+      {route === "/about" && <About />}
+      {route === "/projects" && <Projects />}
+      {route === "/faq" && <FAQ />}
+      <Footer />
+    </div>
+  );
 }
