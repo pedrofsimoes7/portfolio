@@ -94,34 +94,42 @@ const Hero = () => (
             )}
           </div>
         </div>
-        <div>
-          <h1 className="text-3xl md:text-5xl font-semibold leading-tight">{config.nome}</h1>
-          <p className="mt-3 text-lg md:text-xl opacity-95">{config.titulo}</p>
-          <p className="mt-6 max-w-2xl opacity-95">{config.resumo}</p>
+
+        {/* ⬇️ permite o conteúdo encolher e quebrar sem criar scroll horizontal */}
+        <div className="min-w-0">
+          <h1 className="text-3xl md:text-5xl font-semibold leading-tight break-words">{config.nome}</h1>
+          <p className="mt-3 text-lg md:text-xl opacity-95 break-words">{config.titulo}</p>
+          <p className="mt-6 max-w-2xl opacity-95 break-words">{config.resumo}</p>
+
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-  <a
-    href="#/projects"
-    className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl bg-white text-black px-4 py-3 font-medium shadow font-luxury"
-  >
-    View projects <ChevronRight size={18} />
-  </a>
-  <a
-    href="#/about"
-    className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl border border-white/40 px-4 py-3 font-medium font-luxury"
-  >
-    About me
-  </a>
-</div>
+            <a
+              href="#/projects"
+              className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl bg-white text-black px-4 py-3 font-medium shadow font-luxury"
+            >
+              View projects <ChevronRight size={18} />
+            </a>
+            <a
+              href="#/about"
+              className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-xl border border-white/40 px-4 py-3 font-medium font-luxury"
+            >
+              About me
+            </a>
+          </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 text-sm opacity-90 break-words">
-            <span className="inline-flex items-center gap-2"><MapPin size={16} /> {config.localizacao}</span>
-            <a className="inline-flex items-center gap-2 underline break-all" href={`mailto:${config.email}`}><Mail size={16} /> {config.email}</a>
+            <span className="inline-flex items-center gap-2">
+              <MapPin size={16} /> {config.localizacao}
+            </span>
+            <a className="inline-flex items-center gap-2 underline break-all" href={`mailto:${config.email}`}>
+              <Mail size={16} /> {config.email}
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 );
+
 
 const About = () => (
   <main className="max-w-5xl mx-auto px-4 py-12">
@@ -204,13 +212,22 @@ const About = () => (
           <h3 className="text-2xl md:text-3xl font-semibold tracking-tight font-luxury-heading">
             Education & Certifications
           </h3>
-          <ul className="mt-3 list-disc list-inside text-sm leading-relaxed opacity-90">
+          <ul className="mt-3 list-disc list-inside text-sm leading-relaxed opacity-90 break-words">
             <li><span className="font-medium">B.Sc. in Computer Engineering</span> — Polytechnic Institute of Castelo Branco (2023 — Present).  
               Focus on programming, software development, databases, algorithms, OOP and web technologies.</li>
             <li><span className="font-medium">Erasmus+ Semester in Computer Science</span> — Białystok University of Technology, Poland (Spring 2025).  
               Courses in distributed systems, web development, human-computer interaction, and data structures.</li>
             <li><span className="font-medium">HackerRank</span> — Certificate of Accomplishment (2025).  
-            Python(Basic). https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4</li>
+            Python(Basic).{" "}
+                <a
+                  href="https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline break-all"
+                >
+                  https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4
+                </a>
+            </li>
           </ul>
         </Card>
         <Card>
@@ -237,9 +254,9 @@ const About = () => (
 const ProjectCard = ({ title, description, tags = [], repo }) => (
   <Card>
     <div className="flex items-start justify-between gap-6">
-      <div>
-        <h4 className="font-semibold text-lg">{title}</h4>
-        <p className="mt-1 text-sm opacity-90">{description}</p>
+      <div className="min-w-0"> {/* permite o texto encolher sem criar overflow */}
+        <h4 className="font-semibold text-lg break-words">{title}</h4>
+        <p className="mt-1 text-sm opacity-90 break-words">{description}</p>
         <div className="mt-3 flex flex-wrap gap-2">
           {tags.map((t) => (<Badge key={t}>{t}</Badge>))}
         </div>
@@ -259,6 +276,7 @@ const ProjectCard = ({ title, description, tags = [], repo }) => (
     </div>
   </Card>
 );
+
 
 const Projects = () => {
   const projects = useMemo(() => [
