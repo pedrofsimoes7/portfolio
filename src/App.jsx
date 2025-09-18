@@ -87,11 +87,13 @@ const Hero = () => (
       <div className="grid md:grid-cols-[auto,1fr] items-center gap-8">
         <div>
           <div className="w-28 h-28 rounded-2xl overflow-hidden ring-2 ring-white/40 shadow-xl bg-white/10">
-            {config.foto ? (
-              <img src={config.foto} alt={config.nome} className="w-full h-full object-cover" />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center text-4xl">👋</div>
-            )}
+            <div
+              className="w-full h-full bg-no-repeat bg-cover"
+              style={{
+              backgroundImage: `url(${config.foto})`,
+              backgroundPosition: '50% 45%',   // ajusta aqui
+              }}
+            />
           </div>
         </div>
 
