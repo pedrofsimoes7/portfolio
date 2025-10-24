@@ -29,3 +29,12 @@ h1 {
 h2, h3 {
   font-weight: 500;
 }
+
+/* Evitar overflow horizontal no mobile */
+:where(p, h1, h2, h3, h4, h5, h6, li, a, span) {
+  overflow-wrap: anywhere;   /* permite quebra de palavras longas */
+  word-break: break-word;    /* fallback */
+}
+
+/* Em layouts grid/flex, filhos não devem forçar largura */
+* { min-width: 0; }          /* seguro e ajuda imenso em grid/flex */

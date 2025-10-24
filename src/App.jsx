@@ -230,6 +230,16 @@ const About = () => (
                   https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4
                 </a>
             </li>
+            <li><span className="font-medium">CodeForAll</span> — Certificate of Pratical Introduction to Artificial Intelligence | Programmers (2025).{" "}
+                <a
+                  href="https://certificate.codeforall.com/verify/e1f51b7f15965"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline break-all"
+                >
+                  https://certificate.codeforall.com/verify/e1f51b7f15965
+                </a>
+            </li>
           </ul>
         </Card>
         <Card>
