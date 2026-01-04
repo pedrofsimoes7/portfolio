@@ -382,7 +382,7 @@ const FAQ = () => {
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Frequently asked questions</h2>
         <details className="mt-4 group">
           <summary className="cursor-pointer font-medium">Are you available for new opportunities?</summary>
-          <p className="mt-2 text-sm opacity-90">Yes — send me some details and a timeframe.</p>
+          <p className="mt-2 text-sm opacity-90">Yes, send me some details and a timeframe.</p>
         </details>
         <details className="mt-3 group">
           <summary className="cursor-pointer font-medium">What technologies do you use daily?</summary>
