@@ -6,9 +6,9 @@ import { Github, Linkedin, Mail, MapPin, Globe, ExternalLink, ChevronRight, Send
 // =============================
 const config = {
   nome: "Pedro Ferreira Simões",
-  titulo: "Computer Engineering Student",
+  titulo: "Computer Engineering (Final Year) | Junior Software Engineer | Data & AI-focused",
   resumo:
-    "Aspiring software engineer passionate about technology, teamwork, and innovation.",
+    "Final-year Computer Engineering student building real-world software in Python, Java and TypeScript, with a strong interest in Data Science and AI.",
   localizacao: "Pombal, Portugal",
   email: "pfs.pedrosimoes@gmail.com",
   telefone: "+351 961018935",
@@ -142,12 +142,9 @@ const About = () => (
           About me
         </h2>
         <p className="mt-3 leading-relaxed">
-          I am a 3rd-year Computer Engineering student at the Polytechnic Institute of Castelo Branco. 
-          I successfully completed an Erasmus+ semester in Poland, which strengthened my adaptability to different cultural 
-          and professional contexts and improved my teamwork and problem-solving skills.
-          I also have experience volunteering at public and sports events and have participated in technology
-          initiatives such as the Global Game Jam. I’m looking for opportunities to apply my academic knowledge,
-          learn quickly, and contribute actively to the teams I join.
+          I  am a final-year Computer Engineering student with hands-on experience developing web and backend applications. 
+          I participated in Erasmus+ in Poland, focusing on distributed systems and web development, 
+          and I am now preparing for a Master’s in Data Science/AI while working as a junior engineer.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {["Python","Java","C++","JavaScript","Django","HTML","CSS","React","Node.js","Next.js","PostgreSQL","Tailwind CSS","Unity","Databases","Microsoft Office"].map(s => (
