@@ -222,9 +222,9 @@ const About = () => (
                   href="https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4"
                   target="_blank"
                   rel="noreferrer"
-                  className="underline break-all"
+                  className="underline break-all hover:text-blue-500"
                 >
-                  https://www.hackerrank.com/certificates/iframe/a7cc47f70cd4
+                  Certificate
                 </a>
             </li>
             <li><span className="font-medium">CodeForAll</span> — Certificate of Pratical Introduction to Artificial Intelligence | Programmers (2025).{" "}
@@ -232,9 +232,19 @@ const About = () => (
                   href="https://certificate.codeforall.com/verify/e1f51b7f15965"
                   target="_blank"
                   rel="noreferrer"
-                  className="underline break-all"
+                  className="underline break-all hover:text-blue-500"
                 >
-                  https://certificate.codeforall.com/verify/e1f51b7f15965
+                  Certificate
+                </a>
+            </li>
+            <li><span className="font-medium">Bauhaus Spring School 2026</span> — Scientific Machine Learning for Computational Mechanics: From FEM to Neural Operators (3 ECTS).{" "}
+                <a
+                  href="https://drive.google.com/file/d/1AT8SOfc9uFkIFIBONXtihh-WaRtGMFXx/preview"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline hover:text-blue-500"
+                >
+                  Certificate
                 </a>
             </li>
           </ul>
